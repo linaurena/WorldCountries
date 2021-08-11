@@ -1,38 +1,94 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #BEBEBE;
+}
+body{
+  background-color: #2F2836;
+}
+h1{
+  font-size: 2.25rem;
   text-align: center;
+  margin-top: 1.75rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-box{
+  width: fit-content;
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-nav a{
+  text-decoration: none;
+}
+main{
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  width: 88vw;
+  margin: 5rem auto 2rem auto;
+}
+.card{
+  display: flex;
+  width: 100%;
+  background-color: #433A4D;
+  border-radius: 8px;
+  margin: 0.25rem 0rem;
+}
+figure{
+  width: 25%;
+  margin: 1rem;
+}
+.country-flag{
+  height: 42px;
+  width: 100%;
+}
+.data-card{
+  width: 60%;
+  list-style: none;
+  margin-left: 1rem;
+  margin: 1rem 0rem;
+}
+.country-name{
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card div{
+  width: 15%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.country-code{
+  font-size: 0.75rem;
+  background-color: #26212C;
+  text-align: center;
+  height: 1.25rem;
+  border-radius: 0px 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.more-info{
+  border-style: none;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 8px;
+  background-color: darkslateblue;
+  border-radius: 90px 0px 8px 0px ;
+}
+.more-info:hover{
+  cursor: pointer;
+  background-color: rgb(86, 74, 161);
+}
+.more-info img{
+  height: 20px;
 }
