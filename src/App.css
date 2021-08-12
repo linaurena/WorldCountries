@@ -11,12 +11,12 @@ body{
 h1{
   font-size: 2.25rem;
   text-align: center;
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 nav{
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
 }
 .nav-box{
   width: fit-content;
@@ -36,7 +36,40 @@ main{
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   width: 88vw;
-  margin: 5rem auto 2rem auto;
+  margin: 1.5rem auto;
+}
+.form-inputs{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.form-inputs input::placeholder{
+  color:#bebebeb1
+}
+.form-inputs input:focus-visible{
+  outline: none;
+}
+.form-inputs input{
+  width: 155px;
+  height: 40px;
+  margin-right: 1.25rem;
+  border-radius: 8px;
+  padding: 0 0.5rem;
+  background-color: #26212C;
+  border: none;
+}
+.form-inputs select{
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 0.5rem;
+  background-color: #26212C;
+  border: none;
+}
+.form-inputs select:focus-visible{
+  outline: none;
+}
+select option:focus-visible{
+  outline: none;
 }
 .card{
   display: flex;
@@ -91,4 +124,56 @@ figure{
 }
 .more-info img{
   height: 20px;
+}
+@media screen and (min-width: 768px){
+  .card{
+    width: 48%;
+    background-color: #433A4D;
+    border-radius: 8px;
+    margin: 0.25rem;
+  }
+}
+@media screen and (min-width: 1080px){
+  .card{
+    max-width: 30%;
+    background-color: #433A4D;
+    border-radius: 8px;
+    margin: 0.25rem;
+  }
+  .form-inputs{
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1440px){
+  .card{
+    max-width: 22%;
+    background-color: #433A4D;
+    border-radius: 8px;
+    margin: 0.25rem;
+  }
+  .form-inputs{
+    width: 22.5%;
+  }
+}
+@media screen and (min-width: 1920px){
+  .card{
+    max-width: 18%;
+    background-color: #433A4D;
+    border-radius: 8px;
+    margin: 0.25rem;
+  }
+  .form-inputs{
+    width: 18.5%;
+  }
+}
+@media screen and (min-width: 2440px){
+  .card{
+    width: 15%;
+    background-color: #433A4D;
+    border-radius: 8px;
+    margin: 0.25rem;
+  }
+  .form-inputs{
+    width: 15%;
+  }
 }
